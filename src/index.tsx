@@ -97,7 +97,7 @@ const TextareaAutosize: React.ForwardRefRenderFunction<
   
   React.useEffect(() => {
     resizeTextarea();
-  }, [minHeight, maxHeight]);
+  }, [minRows, maxRows]);
 
   return <textarea {...props} onChange={handleChange} ref={ref} />;
 };
